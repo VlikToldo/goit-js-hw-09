@@ -10,7 +10,7 @@ function onCreatePromiseStart(e) {
   e.preventDefault();
   const step = Number(refs.form.elements.step.value);
   let delay = Number(refs.form.elements.delay.value);
-  const amount = refs.form.elements.amount.value;
+  const amount = Number(refs.form.elements.amount.value);
   for (let position = 1; position <= amount; position += 1) {
     createPromise(position, delay)
       .then(({ position, delay }) => {
@@ -36,3 +36,5 @@ function createPromise(position, delay) {
   );
   return p;
 }
+
+console.log(refs.form.elements);
