@@ -13,6 +13,53 @@ body {
 }
 
 img {
-  display: block;
+
+  display: block; 
   max-width: 100%;
 }
+
+button {
+  height: 35px;
+  width: 80px;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: skyblue ;
+}
+
+button:hover {
+  background-color: dodgerblue;
+}
+
+input {
+  border-color: skyblue;
+
+}
+
+
+.timer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.atetime-picker-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#datetime-picker {
+  width: 300px ;
+  height: 35px;
+}
+
+.timer {
+  display: flex;
+  gap: 30px;
+}
+
+
+
+

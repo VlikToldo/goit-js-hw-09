@@ -6,18 +6,6 @@ const refs = {
 
 let timerId = null;
 
-// console.log(refs.btnStart);
-
-// refs.btnStart.addEventListener('click', () => onStartChangeColor = setInterval(() => {
-// if (onStartChangeColor) {
-//     const color = getRandomHexColor();
-//     refs.elBody.style.backgroundColor = color;
-//     return;
-// }}, 1000));
-
-// refs.btnStop.addEventListener('click', () => {
-//     clearInterval(onStartChangeColor);
-// });
 
 refs.btnStart.addEventListener('click', onStartChangeColor);
 refs.btnStop.addEventListener('click', onStopChangeColor);
