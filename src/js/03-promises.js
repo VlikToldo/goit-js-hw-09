@@ -37,4 +37,5 @@ function createPromise(position, delay) {
   return p;
 }
 
+
 console.log(refs.form.elements);
