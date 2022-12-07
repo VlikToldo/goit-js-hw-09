@@ -24,8 +24,6 @@ function onStopChangeColor() {
     timerId = null;
 }
 
-
-
 function changeColor() {
     const color = getRandomHexColor();
     refs.elBody.style.backgroundColor = color;
