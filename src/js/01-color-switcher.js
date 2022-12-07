@@ -12,16 +12,13 @@ refs.btnStop.addEventListener('click', onStopChangeColor);
 
 function onStartChangeColor() {
 
-    if (timerId === null) {
-        timerId = setInterval(changeColor, 1000)
-    };
-    return;
-
+    timerId = setInterval(changeColor, 1000)
+    refs.btnStart.disabled = true;
 }
 
 function onStopChangeColor() {
     clearInterval(timerId);
-    timerId = null;
+    refs.btnStart.disabled = false;
 }
 
 function changeColor() {
